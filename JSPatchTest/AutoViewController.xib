@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutoViewController">
+            <connections>
+                <outlet property="bottomCons" destination="2Bi-Iv-kD6" id="9jH-Q3-mxT"/>
+                <outlet property="bottomHCons" destination="dot-wx-dQM" id="Vjq-On-wXx"/>
+                <outlet property="inputView" destination="md6-Kz-YsA" id="A4x-x6-PhA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tt9-k7-DJp" userLabel="Bottom">
+                    <rect key="frame" x="0.0" y="632" width="375" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTS-Kn-2WC">
+                            <rect key="frame" x="326" y="5" width="45" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="mYy-ab-izQ"/>
+                                <constraint firstAttribute="width" constant="45" id="yRH-Wh-Eug"/>
+                            </constraints>
+                            <state key="normal" title="发送"/>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="md6-Kz-YsA" customClass="InputTextView">
+                            <rect key="frame" x="3" y="5" width="315" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.78180239900000004" green="0.78180239900000004" blue="0.78180239900000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="md6-Kz-YsA" firstAttribute="top" secondItem="Tt9-k7-DJp" secondAttribute="top" constant="5" id="8D3-mF-6CR"/>
+                        <constraint firstItem="vTS-Kn-2WC" firstAttribute="top" secondItem="Tt9-k7-DJp" secondAttribute="top" constant="5" id="Apf-Ys-uWi"/>
+                        <constraint firstItem="md6-Kz-YsA" firstAttribute="leading" secondItem="Tt9-k7-DJp" secondAttribute="leading" constant="3" id="DnA-9r-kIb"/>
+                        <constraint firstAttribute="bottom" secondItem="md6-Kz-YsA" secondAttribute="bottom" constant="5" id="KFg-Qv-bc4"/>
+                        <constraint firstAttribute="trailing" secondItem="vTS-Kn-2WC" secondAttribute="trailing" constant="4" id="PjS-0W-irc"/>
+                        <constraint firstItem="vTS-Kn-2WC" firstAttribute="centerY" secondItem="md6-Kz-YsA" secondAttribute="centerY" id="QZI-CR-UhG"/>
+                        <constraint firstAttribute="height" constant="35" id="dot-wx-dQM" userLabel="BottomH Cons"/>
+                        <constraint firstItem="vTS-Kn-2WC" firstAttribute="leading" secondItem="md6-Kz-YsA" secondAttribute="trailing" constant="8" id="jUQ-2Q-x1d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Tt9-k7-DJp" secondAttribute="bottom" id="2Bi-Iv-kD6"/>
+                <constraint firstItem="Tt9-k7-DJp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lhu-gt-A6z"/>
+                <constraint firstAttribute="trailing" secondItem="Tt9-k7-DJp" secondAttribute="trailing" id="Lsc-qI-a0M"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>
